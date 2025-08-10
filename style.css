@@ -1,0 +1,155 @@
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 50px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.aboutMe {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px #8f8f8f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 65%;
+}
+
+h1{
+    font-size: calc(40vw / 10);
+   
+}
+
+p {
+    font-size: calc(28vw / 10);
+}
+
+.picture {
+    background: url("./Pasted image.png");
+    width:  50vw;
+    background-size: cover;
+    background-position: center;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px #075e41;
+    box-shadow:  0px 0px 5px #8f8f8f;
+    aspect-ratio: 1 / 1; 
+}
+
+.desgin {
+    height: 1vw;
+    background-color: #075e41;
+    transform: skewY(-13deg) scaleY(90);
+}
+
+
+.myWork {
+    margin: 2vw;
+    padding-top: 60vw;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 2px 2px 5px #8f8f8f;
+}
+
+.card:hover {
+    opacity: 90%;
+    box-shadow:inset 2px 2px 10px #8f8f8f;
+}
+
+.card img {
+    aspect-ratio: 1.3 / 1; 
+}
+
+.description {
+    align-self: center;
+    font-size: calc(32vw / 10);
+    height: fit-content;
+    font-weight: 500;
+    padding: 10px;
+}
+
+footer {
+    background-color: #075e41;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+footer>img {
+    flex-basis: 30%;
+    width:  40vw;
+    aspect-ratio: 1 / 1.3; 
+}
+
+.contact {
+    flex-basis: 60%;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover {
+    opacity: 80%;
+}
+
+
+@media (max-width: 767px) {
+    .intro {
+        flex-direction: column;
+    }
+    
+    .myWork {
+        margin-top: 60vw;
+    }
+
+    footer {
+        flex-direction: column;
+    } 
+
+    footer img {
+        flex-basis: 30%;
+    }  
+}
